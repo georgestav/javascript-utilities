@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["utilities", "javascript", "helpers"],
+  "author": "Georgios Stavroulakis",
+  "license": "MIT",
+  "description": "A set of JavaScript utility functions",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
