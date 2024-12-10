@@ -1,8 +1,14 @@
 {
-  "name": "@codealpine/javascript-utilities",
+  "name": "@georgestav/javascript-utilities",
   "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "https://github.com/georgestav/javascript-utilities",
+  "bugs": "https://github.com/georgestav/javascript-utilities/issues",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
