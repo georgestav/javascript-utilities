@@ -1,6 +1,6 @@
 {
   "name": "@codealpine/javascript-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -8,7 +8,11 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
-  "keywords": ["utilities", "javascript", "helpers"],
+  "keywords": [
+    "utilities",
+    "javascript",
+    "helpers"
+  ],
   "author": "Georgios Stavroulakis",
   "license": "MIT",
   "description": "A set of JavaScript utility functions",
