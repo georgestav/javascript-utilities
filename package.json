@@ -6,8 +6,7 @@
   "repository": "https://github.com/georgestav/javascript-utilities",
   "bugs": "https://github.com/georgestav/javascript-utilities/issues",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "scripts": {
     "build": "tsc",
