@@ -1,1 +1,1 @@
-export * from './CustomString'
+export * from './CustomString';
