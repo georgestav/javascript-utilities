@@ -1,3 +1,38 @@
+# Custom Utils Library
+
+This library provides utility functions for `String` and `Number` object manipulations.
+
+## Importing
+
+You can import the utility functions as follows:
+
+```typescript
+import { NumberUtils } from '@georgestav/javascript-utilities';
+import { StringUtils } from '@georgestav/javascript-utilities';
+```
+
+## Usage
+
+After importing the functions, you can use them like this:
+
+```typescript
+let str = "hello world";
+let result = StringUtils.capitalizeFirstLetter(str); // Results in 'Hello world'
+
+let num = 5;
+let isEven = NumberUtils.isEven(num); // Results in false
+```
+
+You can also use the prototype methods directly on string or number instances:
+
+```typescript
+let str = "hello world";
+str = str.capitalizeFirstLetter(); // Transforms str to 'Hello world'
+
+let num = 5;
+let isEven = num.isEven(); // Results in false
+```
+
 ## Full Methods List
 ### Instance Methods
 
@@ -32,6 +67,23 @@
 | `compareTo` | Lexicographically compares two strings. |
 | `startsWith` | Checks if a string starts with a given prefix. |
 | `endsWith` | Checks if a string ends with a given suffix. |
+
+## NumberUtils Class
+NumberUtils is a utility class providing numeric operations and helper methods.
+
+### Static Methods
+
+| Method | Description |
+| --- | --- |
+| `isEven` | Checks if a number is even. |
+| `isOdd` | Checks if a number is odd. |
+| `clamp` | Clamps a number within a specified range. |
+| `toFixed` | Rounds a number to a specified decimal place and returns a string. |
+| `random` | Returns a random number between a specified range (inclusive). |
+| `toPercentage` | Converts a number to a percentage string. |
+| `factorial` | Computes the factorial of a non-negative integer. |
+| `isPrime` | Checks if a number is a prime number. |
+
 ## Contributing
 Contributions are welcomed! Whether it's improving existing methods, fixing bugs, or suggesting new utilities, feel free to:
 1. Fork the repository.
