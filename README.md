@@ -9,6 +9,7 @@ You can import the utility functions as follows:
 ```typescript
 import {NumberUtils} from '@georgestav/javascript-utilities';
 import {StringUtils} from '@georgestav/javascript-utilities';
+import {DateUtils} from '@georgestav/javascript-utilities';
 ```
 
 ## Usage
@@ -33,7 +34,7 @@ let num = 5;
 let isEven = num.isEven(); // Results in false
 ```
 
-## Full Methods List
+## String Utils class
 
 ### Instance Methods
 
@@ -81,6 +82,46 @@ NumberUtils is a utility class providing numeric operations and helper methods.
 | `isEven` | Checks if a number is even.                                 |
 | `max`    | Compares number to a given number and returns the biggest.  |
 | `min`    | Compares number to a given number and returns the smallest. |
+
+## DateUtils Class
+
+The `DateUtils` class provides utility functions for working with `Date` objects.
+
+### Static Methods
+
+| Method                                        | Description                                                               |
+|-----------------------------------------------|---------------------------------------------------------------------------|
+| `addDays(date, days)`                         | Adds a specified number of days to a date and returns the resulting date. |
+| `subtractDays(date, days)`                    | Subtracts a specified number of days from a date.                         |
+| `getFirstDayOfMonth(date)`                    | Returns the first day of the month for the given date.                    |
+| `getLastDayOfMonth(date)`                     | Returns the last day of the month for the given date.                     |
+| `getFirstHourOfDay(date)`                     | Returns a new `Date` object set to the beginning of the given day.        |
+| `getLastHourOfDay(date)`                      | Returns a new `Date` object set to the end of the given day.              |
+| `isWithinDateRange(date, startDate, endDate)` | Checks if a date is within a specified date range.                        |
+| `addSeconds(date, seconds)`                   | Adds the specified number of seconds to the given date.                   |
+| `subtractSeconds(date, seconds)`              | Subtracts the specified number of seconds from the given date.            |
+| `isAfter(date, comparisonDate)`               | Checks if the first date is after the second date.                        |
+| `isBefore(date, comparisonDate)`              | Checks if the first date is before the second date.                       |
+| `isEqual(date1, date2)`                       | Compares two dates for equality.                                          |
+
+### Instance Methods
+
+By extending the `Date` prototype, you can call these methods directly on `Date` instances:
+
+| Method                                  | Description                                                           |
+|-----------------------------------------|-----------------------------------------------------------------------|
+| `addDays(days)`                         | Adds a specified number of days to the current date.                  |
+| `subtractDays(days)`                    | Subtracts a specified number of days from the current date.           |
+| `getFirstDayOfMonth()`                  | Returns the first day of the month for the current date.              |
+| `getLastDayOfMonth()`                   | Returns the last day of the month for the current date.               |
+| `getFirstHourOfDay()`                   | Returns the first hour of the current day.                            |
+| `getLastHourOfDay()`                    | Returns the last hour of the current day.                             |
+| `isWithinDateRange(startDate, endDate)` | Checks if the current date is within a specific date range.           |
+| `addSeconds(seconds)`                   | Adds the specified number of seconds to the current date.             |
+| `subtractSeconds(seconds)`              | Subtracts the specified number of seconds from the current date.      |
+| `isAfter(comparisonDate)`               | Checks if the current date is after the specified comparison date.    |
+| `isBefore(comparisonDate)`              | Checks if the current date is before the specified comparison date.   |
+| `isEqual(comparisonDate)`               | Checks if the current date is equal to the specified comparison date. |
 
 ## Contributing
 
